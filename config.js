@@ -1,4 +1,4 @@
-//var HtmlReporter = require('protractor-html-screenshot-reporter');
+
 exports.config = {
 framework: 'jasmine',
 seleniumAddress: 'http://localhost:4444/wd/hub',
@@ -10,8 +10,7 @@ capabilities: {
   },
   onPrepare: function(){
     browser.manage().window().maximize();
-   // jasmine.getEnv().addReporter(new HtmlReporter({
-      //  baseDirectory: '/tmp/screenshots' }));
+   
     browser.manage().timeouts().implicitlyWait(5000);
 },
 params: {
@@ -22,6 +21,6 @@ params: {
   },
  jasmineNodeOpts: {
  showColors: true,
- defaultTimeoutInterval: 30000000,
+ defaultTimeoutInterval: 220000,
      }
       }
