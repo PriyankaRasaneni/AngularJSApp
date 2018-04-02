@@ -25,7 +25,6 @@ beforeAll(function(){
 it('Creating account in JS', function() {
     createAccountLink.click();
     browser.driver.sleep(3000);
-   // browser.wait(until.elementToBeClickable(createAccountlink,5000,'no element found as clickable'));
    firstName.sendKeys('Priyanka');
    lastName.sendKeys('Rasaneni');
    email.sendKeys('priyarasaneni@gmail.com');
