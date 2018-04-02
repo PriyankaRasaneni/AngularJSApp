@@ -40,17 +40,11 @@ browser.driver.sleep(5000);
 
  })
 
-// it('Logout',function(){
-//     profiledropdown.click();
-//     logoutlink.click();
-//     browser.driver.sleep(3000);
-    
-
-
-
-
-
-//})
+it('Logout',function(){
+    profiledropdown.click();
+    logoutlink.click();
+    browser.driver.sleep(3000);
+})
 
 
 
