@@ -19,9 +19,6 @@ var selectCountry = element(by.model('customer.country'));
 var saveButton = element(by.buttonText('Save'));
 
 
-
-
-
 beforeAll(function(){
     browser.ignoreSynchronization = true;
     browser.get(url);
@@ -43,6 +40,7 @@ beforeAll(function(){
 addCustomerLink.click();
 //userName.click().clear().sendKeys("PriyankaRasaneni"); // for logged in User username will dispaly with Username
 firstName.click().sendKeys("Priyanka");
+browser.driver.sleep(3000);
 lastName.click().sendKeys("Rasaneni");
 email.click().sendKeys("priyarasaneni@gmail.com");
 phone.click().sendKeys("9874563215");
@@ -66,14 +64,6 @@ it('Logout',function(){
     logoutlink.click();
     browser.driver.sleep(3000);
 })
-
-
-
-
-
-
-
-
 
 
 });

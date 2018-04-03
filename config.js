@@ -4,7 +4,7 @@ framework: 'jasmine',
 seleniumAddress: 'http://localhost:4444/wd/hub',
 ignoreUncaughtExceptions: true,
 specs:['D://Priyanka//Testing//AngularJSApp//login.spec.js'],
-//specs: ['C://Users//user//Desktop//Priyanka//AngularJS test case//CreateAccount.spec.js'],
+specs: ['D://Priyanka//Testing//AngularJSApp//CreateAccount.spec.js'],
 capabilities: {
  browserName: 'chrome'
   },
